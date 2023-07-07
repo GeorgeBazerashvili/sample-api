@@ -1,5 +1,9 @@
 const express = require("express");
 const app = express();
+
+app.use(cors());
+app.use(express.json());
+
 const arr = [
   { name: "iPhone 12", price: 999 },
   { name: "Samsung Galaxy S21", price: 799 },
